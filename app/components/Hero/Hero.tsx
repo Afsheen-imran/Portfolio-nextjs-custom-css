@@ -2,7 +2,7 @@
 
 import styles from "../Hero/Hero.module.css";
 import { motion } from "framer-motion";
-import Link from "next/link"; // Import Link component from Next.js
+import Link from "next/link";
 
 const Hero = () => (
   <motion.section

@@ -1,105 +1,89 @@
-/* General Styling */
+/* Header.module.css */
+
+/* Basic header styling */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333; /* Dark background for header */
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .logoText {
-    color: white;
-    text-decoration: none;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: #115487;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logoText {
+  color: white;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.navList {
+  display: flex;
+  gap: 20px; /* Space between items */
+}
+
+.navItem {
+  list-style: none;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navLink:hover {
+  color: yellow; /* Hover effect */
+}
+
+/* Mobile Navigation Styling */
+.mobileNav {
+  display: none; /* Hide mobile navigation by default */
+}
+
+.hamburgerButton {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Show hamburger button on mobile */
+@media (max-width: 768px) {
   .nav {
-    display: flex;
-    align-items: center;
+    display: none; /* Hide desktop navigation on small screens */
   }
-  
-  .navList {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .navItem {
-    list-style-type: none;
-  }
-  
-  .navLink {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  
-  .navLink:hover {
-    background-color: #007bff; /* Blue background on hover */
-  }
-  
-  /* Mobile Navigation Styles */
+
   .mobileNav {
-    display: none;
+    display: block; /* Show mobile navigation */
   }
-  
-  /* LinkedIn Button */
-  .ctaButton {
-    background-color: red;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  .ctaButton:hover {
-    background-color: darkred;
-  }
-  
-  /* Hamburger button for mobile */
-  .hamburgerButton {
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    /* Hide the regular navigation on mobile */
-    .nav {
-      display: none;
-    }
-  
-    /* Show mobile navigation */
-    .mobileNav {
-      display: block;
-    }
-  
-    .navListMobile {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-  
-    .navLinkMobile {
-      text-decoration: none;
-      color: black;
-      padding: 10px;
-      background-color: #e0e0e0;
-      border-radius: 5px;
-    }
-  
-    .navLinkMobile:hover {
-      background-color: #007bff;
-      color: white;
-    }
-  }
-  
+}
+
+/* Sheet specific styles for mobile */
+.navListMobile {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.navLinkMobile {
+  color: #333;
+  font-size: 1.25rem;
+  padding: 15px 20px;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.navLinkMobile:hover {
+  background-color: #f0f0f0;
+}
