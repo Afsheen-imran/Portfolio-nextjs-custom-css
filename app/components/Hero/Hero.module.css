@@ -1,0 +1,82 @@
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1557683316-973673baf926?fit=crop&w=1500&q=80");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #ffffff;
+    overflow: hidden;
+  }
+  
+  /* Gradient Overlay */
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.8)
+    );
+    z-index: 1;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 1rem;
+    max-width: 800px;
+  }
+  
+  /* Title Styles */
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
+    color: #ff6f61;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* Description Styles */
+  .description {
+    font-size: 1.2rem;
+    margin: 1rem 0 2rem;
+    color: #f5f5f5;
+    line-height: 1.5;
+  }
+  
+  /* CTA Button Styles */
+  .ctaButton {
+    padding: 0.8rem 1.5rem;
+    background-color: #ff6f61;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .ctaButton:hover {
+    background-color: #ff8a80;
+    transform: translateY(-3px);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2.5rem;
+    }
+    .description {
+      font-size: 1rem;
+    }
+  }
+  
