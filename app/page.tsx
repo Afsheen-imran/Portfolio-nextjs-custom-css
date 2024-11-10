@@ -14,7 +14,7 @@ const Home = () => (
       <section className={styles.section}>
         <Hero />
       </section>
-    
+   
     </main>
     
   </div>

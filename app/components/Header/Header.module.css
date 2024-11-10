@@ -1,89 +1,51 @@
-/* Header.module.css */
 
-/* Basic header styling */
 .header {
+  background-color: #0a4d8f; 
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 30px;
-  background-color: #115487;
-  color: white;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
 }
 
 .logoText {
-  color: white;
+  color: #ffffff; 
+  font-size: 1.5em;
   text-decoration: none;
 }
 
+/* Navigation Styles */
 .nav {
   display: flex;
-  align-items: center;
 }
 
 .navList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  gap: 20px; /* Space between items */
+  gap: 15px; 
 }
 
 .navItem {
-  list-style: none;
+  margin: 0;
 }
 
 .navLink {
-  color: white;
   text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s;
+  color: #ffffff; 
+  font-weight: 500;
+  transition: color 0.3s ease; 
 }
 
 .navLink:hover {
-  color: yellow; /* Hover effect */
+  color: #ffcc00; 
 }
 
-/* Mobile Navigation Styling */
-.mobileNav {
-  display: none; /* Hide mobile navigation by default */
-}
-
-.hamburgerButton {
-  background: transparent;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-
-/* Show hamburger button on mobile */
+/* Mobile View */
 @media (max-width: 768px) {
-  .nav {
-    display: none; /* Hide desktop navigation on small screens */
+  .navList {
+    flex-direction: column;
+    gap: 10px; 
+    padding-top: 10px;
   }
-
-  .mobileNav {
-    display: block; /* Show mobile navigation */
-  }
-}
-
-/* Sheet specific styles for mobile */
-.navListMobile {
-  list-style: none;
-  padding: 0;
-  margin-top: 20px;
-}
-
-.navLinkMobile {
-  color: #333;
-  font-size: 1.25rem;
-  padding: 15px 20px;
-  display: block;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.navLinkMobile:hover {
-  background-color: #f0f0f0;
 }
