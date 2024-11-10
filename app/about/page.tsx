@@ -11,8 +11,8 @@ const About: React.FC = () => {
     <div id="about" className={styles.container}>
       <section className={styles.section}>
         <div className={styles.contentContainer}>
-          {/* Image Animation */}
-          <motion.div
+           {/* Image Animation */}
+           <motion.div
             className={styles.imageWrapper}
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -26,7 +26,6 @@ const About: React.FC = () => {
               height={400}
             />
           </motion.div>
-          
           {/* Text Animation */}
           <motion.div
             className={styles.textWrapper}
